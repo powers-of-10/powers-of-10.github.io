@@ -1,1 +1,1 @@
-# powers-of-ten.github.io
+# powers-of-10.github.io
