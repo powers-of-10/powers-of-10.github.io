@@ -1,1 +1,1 @@
-# generative-dynamics.github.io
+# powers-of-ten.github.io
