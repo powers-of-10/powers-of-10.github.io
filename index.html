@@ -51,7 +51,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-2 publication-title">Generative Powers of Ten</h1>
+          <h1 class="title is-1 publication-title" style="font-size: 44px;">Generative Powers of Ten</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="#" target="_blank">Xiaojuan Wang</a><sup>1</sup>,
@@ -121,7 +121,7 @@
         <span><b>TL;DR: </b>Given a set of prompts describing the scene at various scales, our method creates a seamless zooming video.</span>
       </div>
     </div>
-    <div class="columns is-centered has-text-centered">
+    <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 style="margin-top: 2.5rem;" class="title is-4">Abstract</h2>
         <div class="content has-text-justified">
@@ -130,15 +130,25 @@ We present a method that uses a text-to-image model to generate consistent conte
           </p>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </section>
 <!--/ Abstract -->
 
-<hr>
+
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-4 is-centered has-text-centered">Method</h2>
+    <h2 class="title is-2 is-centered has-text-centered">Abstract</h2>
+     <div class="">
+We present a method that uses a text-to-image model to generate consistent content across multiple image scales, enabling extreme semantic zooms into a scene, e.g., ranging from a wide-angle landscape view of a forest to a macro shot of an insect sitting on one of the tree branches. This representation allows us to render continuously zooming videos, or explore different scales of the scene interactively. We achieve this through a joint multi-scale diffusion sampling approach that encourages consistency across different scales while preserving the integrity of each individual sampling process. Since each generated scale is guided by a different text prompt, our method enables deeper levels of zoom than traditional super-resolution methods that may struggle to create new contextual structure at vastly different scales. We compare our method qualitatively with alternative techniques in image super-resolution and outpainting, and show that our method is most effective at generating consistent multi-scale content.
+</div>
+  </div>
+</section>
+
+<!-- <hr> -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-2 is-centered has-text-centered">Method</h2>
     <div class="hero is-full">
       <div class="results-single">
           <img src="assets/method.jpg" />
@@ -150,10 +160,10 @@ Our method uses a pre-trained diffusion model to jointly denoise multiple images
   </div>
 </section>
 
-<hr>
+<!-- <hr> -->
 <section id="demo" class="section">
   <div class="container is-max-widescreen">
-    <h2 class="title is-4 is-centered has-text-centered">More Results</h2>
+    <h2 class="title is-2 is-centered has-text-centered">More Results</h2>
     <br>
       <div class="hero">
         <video class="" id="dynamic-spatial" autoplay muted playsinline loop>
@@ -187,10 +197,10 @@ Our method uses a pre-trained diffusion model to jointly denoise multiple images
   </div>
 </section>
 
-<hr>
+<!-- <hr> -->
 <section id="demo" class="section">
   <div class="container is-max-widescreen">
-    <h2 class="title is-4 is-centered has-text-centered">Zooming into a real image</h2>
+    <h2 class="title is-2 is-centered has-text-centered">Zooming into a real image</h2>
     <div class="is-centered has-text-centered">We can guide one zoom level to match an input image, allowing us to zoom into a real image. </div>
     <br>
       <div class="hero">
@@ -207,10 +217,10 @@ Our method uses a pre-trained diffusion model to jointly denoise multiple images
   </div>
 </section>
 
-<hr>
+<!-- <hr> -->
 <section id="demo" class="section">
   <div class="container is-max-widescreen">
-    <h2 class="title is-4 is-centered has-text-centered">Diversity</h2>
+    <h2 class="title is-2 is-centered has-text-centered">Diversity</h2>
     <div class="is-centered has-text-centered">By varying the seed, we can get different results for the same set of input prompts. </div>
     <br>
       <div class="hero">
@@ -220,13 +230,11 @@ Our method uses a pre-trained diffusion model to jointly denoise multiple images
     </div>
     <br>
     <br>
-    <br>
       <div class="hero">
         <video class="" id="dynamic-spatial" autoplay muted playsinline loop>
           <source src="assets/diversity2.mp4" type="video/mp4">
         </video>
     </div>
-    <br>
     <br>
     <br>
       <div class="hero">
@@ -236,7 +244,6 @@ Our method uses a pre-trained diffusion model to jointly denoise multiple images
     </div>
     <br>
     <br>
-    <br>
       <div class="hero">
         <video class="" id="dynamic-spatial" autoplay muted playsinline loop>
           <source src="assets/diversity4.mp4" type="video/mp4">
@@ -244,12 +251,10 @@ Our method uses a pre-trained diffusion model to jointly denoise multiple images
     </div>
   </div>
 </section>
-<!-- Spatially Aligned Control -->
-
-<hr>
+<!-- <hr> -->
 <section id="demo" class="section">
   <div class="container is-max-widescreen">
-    <h2 class="title is-4 is-centered has-text-centered">Baseline Comparisons</h2>
+    <h2 class="title is-2 is-centered has-text-centered">Baseline Comparisons</h2>
     <br>
    <!--  <tr><td>Stable Diffusion Super Resolution</td> <td>Stable Diffusion Outpainting</td> <td>Ours</td></tr>
     <br> -->
@@ -267,7 +272,7 @@ Our method uses a pre-trained diffusion model to jointly denoise multiple images
     </div>
 </section>
 
-<hr>
+<!-- <hr> -->
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title is-4">Acknowledgements</h2>
