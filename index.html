@@ -107,12 +107,14 @@
 </section>
 
   <section class="hero teaser">
-    <div class="hero-body">
+    <div class="hero-body is-centered">
       <div class="columns is-centered">
-        <div class="column is-8">
-          <video id="teaser" autoplay muted playsinline loop>
+        <video id="teaser" autoplay muted playsinline loop>
           <source src="assets/teaser.mp4" type="video/mp4">
         </video>
+        </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
           <h2 class="caption is-size-5 subtitle has-text-centered">
            <b>TL;DR: </b>Given a set of prompts describing the scene at various scales, our method creates a seamless zooming video.
           </h2>
@@ -120,34 +122,6 @@
       </div>
     </div>
   </section>
-<!-- Abstract -->
-<!-- <section style="padding: 0rem 1.5rem 3rem 1.5rem;" class="section">
-  <div class="hero is-max-desktop">
-    <div class="results-grid">
-      <div class="results-single">
-        <video id="teaser" autoplay muted playsinline loop>
-          <source src="assets/teaser.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-    <div class="teaser-caption caption columns is-centered has-text-centered">
-      <div>
-        <span><b>TL;DR: </b>Given a set of prompts describing the scene at various scales, our method creates a seamless zooming video.</span>
-      </div>
-    </div>
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 style="margin-top: 2.5rem;" class="title is-4">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-We present a method that uses a text-to-image model to generate consistent content across multiple image scales, enabling extreme semantic zooms into a scene, e.g., ranging from a wide-angle landscape view of a forest to a macro shot of an insect sitting on one of the tree branches. This representation allows us to render continuously zooming videos, or explore different scales of the scene interactively. We achieve this through a joint multi-scale diffusion sampling approach that encourages consistency across different scales while preserving the integrity of each individual sampling process. Since each generated scale is guided by a different text prompt, our method enables deeper levels of zoom than traditional super-resolution methods that may struggle to create new contextual structure at vastly different scales. We compare our method qualitatively with alternative techniques in image super-resolution and outpainting, and show that our method is most effective at generating consistent multi-scale content.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-<!--/ Abstract -->
 
 
 <section class="section">
