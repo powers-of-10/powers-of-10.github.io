@@ -131,7 +131,7 @@ We present a method that uses a text-to-image model to generate consistent conte
   </div>
 </section>
 
-<!-- <hr> -->
+<hr>
 <section class="section">
   <div class="container is-max-desktop">
     <h2 class="title is-2 is-centered has-text-centered">Method</h2>
@@ -146,7 +146,7 @@ Our method uses a pre-trained diffusion model to jointly denoise multiple images
   </div>
 </section>
 
-<!-- <hr> -->
+<hr>
 <section id="demo" class="section">
   <div class="container is-max-widescreen">
     <h2 class="title is-2 is-centered has-text-centered">More Results</h2>
@@ -183,7 +183,7 @@ Our method uses a pre-trained diffusion model to jointly denoise multiple images
   </div>
 </section>
 
-<!-- <hr> -->
+<hr>
 <section id="demo" class="section">
   <div class="container is-max-widescreen">
     <h2 class="title is-2 is-centered has-text-centered">Zooming into a real image</h2>
@@ -203,7 +203,7 @@ Our method uses a pre-trained diffusion model to jointly denoise multiple images
   </div>
 </section>
 
-<!-- <hr> -->
+<hr>
 <section id="demo" class="section">
   <div class="container is-max-widescreen">
     <h2 class="title is-2 is-centered has-text-centered">Diversity</h2>
@@ -241,12 +241,13 @@ Our method uses a pre-trained diffusion model to jointly denoise multiple images
 <section id="demo" class="section">
   <div class="container is-max-widescreen">
     <h2 class="title is-2 is-centered has-text-centered">Baseline Comparisons</h2>
+    <div class="is-centered has-text-centered"> An alternative way to generate the zooming video is to either progressively super-resolving a zoomed-out image with a text-to-image based super-resolution model or outpainting a zoomed-in image with an outpainting model. Here we compare with the Stable Diffusion's super-resolution and outpainting model. </div>
     <br>
     <table style='width:100%;text-align:center' border="0">
     <colgroup>
         <col width="30%"><col width="30%"><col width="30%">
       </colgroup>
-    <tr><td colspan=1 >Stable Diffusion Super Resolution</td> <td colspan=1>Stable Diffusion Outpainting</td> <td colspan=1>Ours</td></tr>
+    <tr><td colspan=1 >Stable Diffusion Super-Resolution</td> <td colspan=1>Stable Diffusion Outpainting</td> <td colspan=1>Ours</td></tr>
      </table>
       <div class="hero">
         <video class="" id="dynamic-spatial" autoplay muted playsinline loop>
@@ -254,7 +255,12 @@ Our method uses a pre-trained diffusion model to jointly denoise multiple images
         </video>
     </div>
     <br>
-    <br>
+    <table style='width:100%;text-align:center' border="0">
+    <colgroup>
+        <col width="30%"><col width="30%"><col width="30%">
+      </colgroup>
+    <tr><td colspan=1 >Stable Diffusion Super-Resolution</td> <td colspan=1>Stable Diffusion Outpainting</td> <td colspan=1>Ours</td></tr>
+     </table>
       <div class="hero">
         <video class="" id="dynamic-spatial" autoplay muted playsinline loop>
           <source src="assets/baseline2.mp4" type="video/mp4">
@@ -262,7 +268,7 @@ Our method uses a pre-trained diffusion model to jointly denoise multiple images
     </div>
 </section>
 
-<!-- <hr> -->
+<hr>
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title is-4">Acknowledgements</h2>
