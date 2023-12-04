@@ -241,13 +241,18 @@ Our method uses a pre-trained diffusion model to jointly denoise multiple images
 <section id="demo" class="section">
   <div class="container is-max-widescreen">
     <h2 class="title is-2 is-centered has-text-centered">Baseline Comparisons</h2>
-    <div class="is-centered has-text-centered"> An alternative way to generate the zooming video is to either progressively super-resolving a zoomed-out image with a text-to-image based super-resolution model or outpainting a zoomed-in image with an outpainting model. Here we compare with the Stable Diffusion's super-resolution and outpainting model. </div>
+
+  <div class="columns is-centered is-max-widescreen">
+  <div class="column is-centered is-10">
+    <div class="is-centered"> Another way to generate a zooming video is to either (1)&nbsp;progressively super-resolve a zoomed-out image with a text-conditioned super-resolution model or (2)&nbsp;progressively outpaint a zoomed-in image with a text-conditioned outpainting model. Here we compare with these two variants, using Stable Diffusion's super-resolution and outpainting models. We observe that causal generation typically results in inferior results, since prior generations are not always compatible with subsequent zoom levels. </div>
+</div>
+</div>
     <br>
     <table style='width:100%;text-align:center' border="0">
     <colgroup>
         <col width="30%"><col width="30%"><col width="30%">
       </colgroup>
-    <tr><td colspan=1 >Stable Diffusion Super-Resolution</td> <td colspan=1>Stable Diffusion Outpainting</td> <td colspan=1>Ours</td></tr>
+    <tr><td colspan=1 >Stable Diffusion Super-Resolution</td> <td colspan=1>Stable Diffusion Outpainting</td> <td colspan=1><b>Ours</b></td></tr>
      </table>
       <div class="hero">
         <video class="" id="dynamic-spatial" autoplay muted playsinline loop>
@@ -259,7 +264,7 @@ Our method uses a pre-trained diffusion model to jointly denoise multiple images
     <colgroup>
         <col width="30%"><col width="30%"><col width="30%">
       </colgroup>
-    <tr><td colspan=1 >Stable Diffusion Super-Resolution</td> <td colspan=1>Stable Diffusion Outpainting</td> <td colspan=1>Ours</td></tr>
+    <tr><td colspan=1 >Stable Diffusion Super-Resolution</td> <td colspan=1>Stable Diffusion Outpainting</td> <td colspan=1><b>Ours</b></td></tr>
      </table>
       <div class="hero">
         <video class="" id="dynamic-spatial" autoplay muted playsinline loop>
@@ -273,7 +278,7 @@ Our method uses a pre-trained diffusion model to jointly denoise multiple images
   <div class="container is-max-desktop content">
     <h2 class="title is-4">Acknowledgements</h2>
     <span>
-    This research project stands as a tribute to the original 1977 <a href="https://www.youtube.com/watch?v=0fKBhvDjuy0">Powers of Ten</a> film, which showcases the sheer magnitudes of scale that exist in the universe by visualizing a continuous zoom from the outermost depths of the galaxy to the cells inside our bodies. This film has greatly inspired our work and has profoundly influenced filmmakers in their approach to visual storytelling, inspiring the use of similar zoom-in-style animations to engage audiences.
+    This research project is inspired by the original 1977 <a href="https://www.youtube.com/watch?v=0fKBhvDjuy0">Powers of Ten</a> film, which originally showcased this type of continuous zoom effect. Our goal in this project is to create a similar animation <b>automatically</b> with a generative model, and also to enable the creation of these zoom videos from <b>our own photos</b>.
     </span>
     <br>
     <br>
